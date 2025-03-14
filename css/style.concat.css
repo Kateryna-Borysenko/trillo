@@ -1,3 +1,4 @@
+
 @charset "UTF-8";
 :root {
   --color-primary: #eb2f64;
@@ -194,10 +195,6 @@ body {
   outline: none;
   width: 100%;
   background-color: var(--color-grey-light-3);
-}
-.search__input::-moz-placeholder {
-  font-weight: 100;
-  color: var(--color-grey-light-4);
 }
 .search__input::placeholder {
   font-weight: 100;
@@ -491,7 +488,7 @@ body {
   background-image: url(../img/chevron-thin-right.svg);
   background-size: cover;
 }
-@supports ((-webkit-mask-image: url()) or (mask-image: url())) {
+@supports (-webkit-mask-image: url()) or (mask-image: url()) {
   .list__item::before {
     background-color: var(--color-primary);
     -webkit-mask-image: url(../img/chevron-thin-right.svg);
@@ -639,4 +636,6 @@ body {
 .btn:focus {
   outline: none;
   animation: pulsate 1s infinite;
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=style.comp.css.map */
